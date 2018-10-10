@@ -3,8 +3,8 @@ pink: #ff6699
 dark-pink: #ffcccc
 brown: #666633
 grey: #ffffff 
-lightlightgrey: #f7f7f7;
-Hover: #f0f0f0;*/
+light-light-grey: #f7f7f7;
+*/
 /* Baseline reset */
 html {
   box-sizing: border-box;
@@ -20,8 +20,7 @@ html {
 body {
   background-color: #feffff;
   color: rgba(0, 0, 0, 0.78);
-  font-family: 'Francois One', 'Verdana', 'Helvetica Neue', 'Helvetica',
-    sans-serif;
+  font-family: "Francois One", "Verdana", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 100%;
   line-height: 1.64rem;
   margin: 0;
@@ -42,7 +41,7 @@ article {
 }
 
 p {
-  font-family: 'Verdana';
+  font-family: "Verdana";
   font-size: 14px;
 }
 
@@ -146,7 +145,7 @@ h1 {
   color: #ff6699;
 } */
 .breadcrumbs__item::after {
-  content: '>';
+  content: ">";
   font-size: 0.5em;
   margin: 0 0.5em;
   position: relative;
@@ -327,8 +326,8 @@ h1 {
 }
 @media screen and (min-width: 750px) {
   table,
-  th,
-  td {
+th,
+td {
     border: 1px solid black;
   }
 }
@@ -341,7 +340,7 @@ h1 {
 }
 @media screen and (min-width: 750px) {
   th,
-  td {
+td {
     padding: 1em;
     text-align: center;
   }
@@ -373,10 +372,10 @@ h1 {
   }
 }
 @media screen and (min-width: 750px) {
-  input[type='text'],
-  input[type='email'],
-  textarea,
-  input[type='submit'] {
+  input[type=text],
+input[type=email],
+textarea,
+input[type=submit] {
     display: inline-block;
     width: 100%;
     padding: 0.5rem;
@@ -386,7 +385,7 @@ h1 {
   }
 }
 @media screen and (min-width: 750px) {
-  input[type='submit'] {
+  input[type=submit] {
     border: 5px solid darkgrey;
     background-color: rgba(255, 105, 180, 0.6);
     color: rgba(60, 60, 60, 0.7);
@@ -430,4 +429,4 @@ h1 {
   }
 }
 
-/*# sourceMappingURL=mian.css.map */
+/*# sourceMappingURL=main.css.map */
