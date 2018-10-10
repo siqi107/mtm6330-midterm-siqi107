@@ -5,7 +5,6 @@ brown: #666633
 grey: #ffffff 
 lightlightgrey: #f7f7f7;
 Hover: #f0f0f0;*/
-
 /* Baseline reset */
 html {
   box-sizing: border-box;
@@ -69,10 +68,9 @@ h1 {
   display: block;
   margin: 15px auto;
   width: 100px;
-
-  img {
-    width: 100px;
-  }
+}
+.logo img {
+  width: 100px;
 }
 
 /* ---------------------------------------------------
@@ -82,25 +80,25 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  a {
-    flex-grow: 1;
-    letter-spacing: 0.5px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin: 3px 0;
-    padding: 10px 10px;
-    background-color: #f7f7f7;
-    color: #666633;
-    &:hover {
-      color: #ffcccc;
-      transition: 0.5s color;
-      background-color: #f0f0f0;
-    }
-    &:active {
-      color: #ff6699;
-    }
-  }
+}
+.nav a {
+  flex-grow: 1;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 3px 0;
+  padding: 10px 10px;
+  background-color: #f7f7f7;
+  color: #666633;
+}
+.nav a:hover {
+  color: #ffcccc;
+  transition: 0.5s color;
+  background-color: #f0f0f0;
+}
+.nav a:active {
+  color: #ff6699;
 }
 
 @media screen and (min-width: 750px) {
@@ -109,21 +107,17 @@ h1 {
     border-bottom: 1px solid #dddddd;
     display: flex;
     flex-direction: row;
-
-    a {
-      background-color: white;
-
-      &:hover {
-        background-color: white;
-      }
-    }
+  }
+  .nav a {
+    background-color: white;
+  }
+  .nav a:hover {
+    background-color: white;
   }
 }
-
 /* ---------------------------------------------------
                BREADCRUMBS MENU STYLES
 ----------------------------------------------------*/
-
 .breadcrumbs {
   list-style: none;
   margin: 0;
@@ -158,9 +152,11 @@ h1 {
   position: relative;
   bottom: 0.25em;
 }
+
 .breadcrumbs__item--last::after {
   display: none;
 }
+
 /* ---------------------------------------------------
                       SLIDE STYLES
 ----------------------------------------------------*/
@@ -212,14 +208,12 @@ h1 {
     left: -400%;
   }
 }
-
 @media screen and (min-width: 750px) {
   .slider {
     width: 700px;
     margin: 10px auto;
   }
 }
-
 /* ---------------------------------------------------
              FEATURED COLLECTION STYLES
 ----------------------------------------------------*/
@@ -241,8 +235,8 @@ h1 {
   }
 
   /* ---------------------------------------------------
-             FOOTER STYLES
-----------------------------------------------------*/
+               FOOTER STYLES
+  ----------------------------------------------------*/
   footer {
     background: #eee;
     display: flex;
@@ -271,8 +265,8 @@ h1 {
   }
 
   /* ---------------------------------------------------
-            PRODUCT GRID STYLES
-----------------------------------------------------*/
+              PRODUCT GRID STYLES
+  ----------------------------------------------------*/
   .product {
     display: flex;
     flex-direction: column;
@@ -284,87 +278,101 @@ h1 {
     text-align: center;
   }
 
-  @media screen and (min-width: 750px) {
-    .product {
-      width: 750px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-  }
+  /* ---------------------------------------------------
+              ABOUT, CONTACT LAYOUT STYLES
+  ----------------------------------------------------*/
 
   /* ---------------------------------------------------
-            ABOUT, CONTACT LAYOUT STYLES
-----------------------------------------------------*/
+              BUSINESS HOUR TABLE STYLES
+  ----------------------------------------------------*/
+
+  /* ---------------------------------------------------
+              CONTACT FORM STYLES
+  ----------------------------------------------------*/
+
+  /* ---------------------------------------------------
+              SINGLE PRODUCT STYLES
+  ----------------------------------------------------*/
+}
+@media screen and (min-width: 750px) and (min-width: 750px) {
+  .product {
+    width: 750px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 750px) {
   main {
     margin: 20px auto;
     display: flex;
     flex-direction: column;
   }
-
+}
+@media screen and (min-width: 750px) {
   main article div img {
     width: 200px;
   }
-  @media screen and (min-width: 750px) {
-    main {
-      display: flex;
-      flex-direction: row;
-    }
-
-    article {
-      flex-basis: 50%;
-      padding-right: 10px;
-    }
+}
+@media screen and (min-width: 750px) and (min-width: 750px) {
+  main {
+    display: flex;
+    flex-direction: row;
   }
 
-  /* ---------------------------------------------------
-            BUSINESS HOUR TABLE STYLES
-----------------------------------------------------*/
-
+  article {
+    flex-basis: 50%;
+    padding-right: 10px;
+  }
+}
+@media screen and (min-width: 750px) {
   table,
   th,
   td {
     border: 1px solid black;
   }
-
+}
+@media screen and (min-width: 750px) {
   table {
     border: 1px solid black;
     border-collapse: collapse;
     width: 100%;
   }
-
+}
+@media screen and (min-width: 750px) {
   th,
   td {
     padding: 1em;
     text-align: center;
   }
-
+}
+@media screen and (min-width: 750px) {
   th {
     text-align: center;
     background: grey;
     color: white;
   }
-
-  /* ---------------------------------------------------
-            CONTACT FORM STYLES
-----------------------------------------------------*/
-
+}
+@media screen and (min-width: 750px) {
   form {
     margin: 1rem;
     padding: 1rem;
     max-width: 90rem;
     background-color: rgba(255, 192, 203, 0.6);
   }
-
+}
+@media screen and (min-width: 750px) {
   label {
     margin: 0.5rem 0;
     display: block;
   }
-
+}
+@media screen and (min-width: 750px) {
   fieldset {
     padding: 0 0 1rem 0;
   }
-
+}
+@media screen and (min-width: 750px) {
   input[type='text'],
   input[type='email'],
   textarea,
@@ -376,45 +384,50 @@ h1 {
     color: white;
     font-size: 1rem;
   }
-
+}
+@media screen and (min-width: 750px) {
   input[type='submit'] {
     border: 5px solid darkgrey;
     background-color: rgba(255, 105, 180, 0.6);
     color: rgba(60, 60, 60, 0.7);
     font-size: 1.5rem;
   }
-
-  /* ---------------------------------------------------
-            SINGLE PRODUCT STYLES
-----------------------------------------------------*/
+}
+@media screen and (min-width: 750px) {
   .single-product {
     display: flex;
     flex-direction: column;
     margin: 20px auto;
+  }
+}
+@media screen and (min-width: 750px) {
+  .column-1.column-2 {
+    flex-grow: 1;
+  }
+}
+@media screen and (min-width: 750px) {
+  .column-1 {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 750px) {
+  .column-2 {
+    padding-left: 20px;
+  }
+}
+@media screen and (min-width: 750px) and (min-width: 750px) {
+  .single-product {
+    display: flex;
+    flex-direction: row;
   }
 
   .column-1.column-2 {
     flex-grow: 1;
   }
 
-  .column-1 {
-    margin: 0 auto;
-  }
-  .column-2 {
-    padding-left: 20px;
-  }
-  @media screen and (min-width: 750px) {
-    .single-product {
-      display: flex;
-      flex-direction: row;
-    }
-
-    .column-1.column-2 {
-      flex-grow: 1;
-    }
-
-    .single-product .column-1 img {
-      width: 400px;
-    }
+  .single-product .column-1 img {
+    width: 400px;
   }
 }
+
+/*# sourceMappingURL=mian.css.map */
