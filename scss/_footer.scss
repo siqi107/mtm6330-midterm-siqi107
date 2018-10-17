@@ -25,11 +25,43 @@ footer {
   }
 }
 
+.follow-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .follow-us a {
+  margin-left: 10px;
   &:visited {
     color: black;
   }
   &:hover {
     color: lighten($pink, 20%);
+  }
+}
+
+.footer-content p {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 750px) {
+  .footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+  }
+
+  .follow-us {
+    margin: 0 60px;
+  }
+
+  .footer-content {
+    margin-left: 60px;
+  }
+
+  .footer-content p {
+    margin-top: 15px;
   }
 }
