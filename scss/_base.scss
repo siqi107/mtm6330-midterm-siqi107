@@ -1,0 +1,40 @@
+/* Baseline reset */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #feffff;
+  color: rgba(0, 0, 0, 0.78);
+  font-family: 'Francois One', 'Verdana', 'Helvetica Neue', 'Helvetica',
+    sans-serif;
+  font-size: 100%;
+  line-height: 1.64rem;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgba(0, 0, 0, 0.89);
+}
+
+article {
+  padding: 0;
+}
+
+p {
+  font-family: 'Verdana';
+  font-size: 14px;
+}

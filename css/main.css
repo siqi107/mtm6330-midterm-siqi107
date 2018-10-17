@@ -32,19 +32,6 @@ p {
   font-family: 'Verdana';
   font-size: 14px; }
 
-/* Add styles here */
-.container {
-  padding: 30px;
-  margin: 0px auto;
-  max-width: 1250px; }
-
-h1 {
-  color: #666633;
-  text-transform: capitalize;
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 25px; }
-
 /* ---------------------------------------------------
                       LOGO STYLES
 ----------------------------------------------------*/
@@ -144,6 +131,19 @@ footer {
 
 .follow-us a:hover {
   color: #ffccdd; }
+
+/* Add styles here */
+.container {
+  padding: 30px;
+  margin: 0px auto;
+  max-width: 1250px; }
+
+h1 {
+  color: #666633;
+  text-transform: capitalize;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 25px; }
 
 /* ---------------------------------------------------
                       SLIDER STYLES
@@ -300,7 +300,9 @@ input[type='submit'] {
   padding: 0.5rem;
   background-color: white;
   color: black;
-  font-size: 1rem; }
+  font-size: 1rem;
+  border: 1px solid #eeeeee;
+  border-radius: 7px; }
 
 button {
   border-radius: 5px;

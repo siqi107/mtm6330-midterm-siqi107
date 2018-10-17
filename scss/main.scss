@@ -1,47 +1,10 @@
+@import 'base';
+@import 'header';
+@import 'footer';
+
 $pink: #ff6699;
 $brown: #666633;
 $grey: #eeeeee;
-
-/* Baseline reset */
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  background-color: #feffff;
-  color: rgba(0, 0, 0, 0.78);
-  font-family: 'Francois One', 'Verdana', 'Helvetica Neue', 'Helvetica',
-    sans-serif;
-  font-size: 100%;
-  line-height: 1.64rem;
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: rgba(0, 0, 0, 0.89);
-}
-
-article {
-  padding: 0;
-}
-
-p {
-  font-family: 'Verdana';
-  font-size: 14px;
-}
 
 /* Add styles here */
 .container {
@@ -56,135 +19,6 @@ h1 {
   font-size: 36px;
   text-align: center;
   margin-bottom: 25px;
-}
-
-/* ---------------------------------------------------
-                      LOGO STYLES
-----------------------------------------------------*/
-.logo {
-  display: block;
-  margin: 15px auto;
-  width: 100px;
-
-  img {
-    width: 100px;
-  }
-}
-/* ---------------------------------------------------
-                      NAV STYLES
-----------------------------------------------------*/
-.nav {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  a {
-    flex-grow: 1;
-    letter-spacing: 0.5px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin: 3px 0;
-    padding: 10px 10px;
-    border-bottom: 1px solid darken($grey, 10%);
-    color: $brown;
-    &:hover {
-      color: lighten($pink, 20%);
-      transition: 0.5s color;
-      // background-color: $grey;
-    }
-    &:active {
-      color: $pink;
-    }
-  }
-}
-
-@media screen and (min-width: 750px) {
-  .nav {
-    border-top: 1px solid darken($grey, 10%);
-    border-bottom: 1px solid darken($grey, 10%);
-    display: flex;
-    flex-direction: row;
-
-    a {
-      background-color: white;
-      border-bottom: none;
-
-      &:hover {
-        background-color: white;
-      }
-    }
-  }
-}
-
-/* ---------------------------------------------------
-               BREADCRUMBS MENU STYLES
-----------------------------------------------------*/
-.breadcrumbs {
-  list-style: none;
-  margin: 0;
-  padding: 0.5em;
-  color: $brown;
-  font-size: 14px;
-}
-
-.breadcrumbs__item {
-  display: inline;
-  a {
-    text-decoration: none;
-    &:visited {
-      color: $brown;
-    }
-    &:hover {
-      color: lighten($pink, 20%);
-    }
-  }
-  &::after {
-    content: '>';
-    font-size: 0.5em;
-    margin: 0 0.5em;
-    position: relative;
-    bottom: 0.25em;
-  }
-}
-
-/* .breadcrumbs_item a:active {
-  color: #ff6699;
-} */
-
-.breadcrumbs__item--last::after {
-  display: none;
-}
-
-/* ---------------------------------------------------
-                  FOOTER STYLES
-----------------------------------------------------*/
-footer {
-  background: $grey;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.back-to-top-wrapper a {
-  text-decoration: none;
-  &:link {
-    color: black;
-  }
-  &:visited {
-    color: black;
-  }
-  &:hover {
-    color: lighten($pink, 20%);
-  }
-}
-
-.follow-us a {
-  &:visited {
-    color: black;
-  }
-  &:hover {
-    color: lighten($pink, 20%);
-  }
 }
 
 /* ---------------------------------------------------
@@ -399,6 +233,8 @@ input[type='submit'] {
   background-color: lighten($grey, 50%);
   color: black;
   font-size: 1rem;
+  border: 1px solid $grey;
+  border-radius: 7px;
 }
 
 // input[type='submit'] {

@@ -1,0 +1,100 @@
+$pink: #ff6699;
+$brown: #666633;
+$grey: #eeeeee;
+
+/* ---------------------------------------------------
+                      LOGO STYLES
+----------------------------------------------------*/
+.logo {
+  display: block;
+  margin: 15px auto;
+  width: 100px;
+
+  img {
+    width: 100px;
+  }
+}
+/* ---------------------------------------------------
+                      NAV STYLES
+----------------------------------------------------*/
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  a {
+    flex-grow: 1;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 3px 0;
+    padding: 10px 10px;
+    border-bottom: 1px solid darken($grey, 10%);
+    color: $brown;
+    &:hover {
+      color: lighten($pink, 20%);
+      transition: 0.5s color;
+      // background-color: $grey;
+    }
+    &:active {
+      color: $pink;
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .nav {
+    border-top: 1px solid darken($grey, 10%);
+    border-bottom: 1px solid darken($grey, 10%);
+    display: flex;
+    flex-direction: row;
+
+    a {
+      background-color: white;
+      border-bottom: none;
+
+      &:hover {
+        background-color: white;
+      }
+    }
+  }
+}
+
+/* ---------------------------------------------------
+               BREADCRUMBS MENU STYLES
+----------------------------------------------------*/
+.breadcrumbs {
+  list-style: none;
+  margin: 0;
+  padding: 0.5em;
+  color: $brown;
+  font-size: 14px;
+}
+
+.breadcrumbs__item {
+  display: inline;
+  a {
+    text-decoration: none;
+    &:visited {
+      color: $brown;
+    }
+    &:hover {
+      color: lighten($pink, 20%);
+    }
+  }
+  &::after {
+    content: '>';
+    font-size: 0.5em;
+    margin: 0 0.5em;
+    position: relative;
+    bottom: 0.25em;
+  }
+}
+
+/* .breadcrumbs_item a:active {
+  color: #ff6699;
+} */
+
+.breadcrumbs__item--last::after {
+  display: none;
+}
