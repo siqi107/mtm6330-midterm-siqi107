@@ -1,84 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/min/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Francois+One"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <title>Magic Baking</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/min/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    crossorigin="anonymous">
-  <title>Magic Baking</title>
-</head>
+  <body>
+    <div class="container">
+      <!-- header contains logo and navigation menu -->
+      <header>
+        <div id="top-content">
+          <a href="index.html" class="logo"
+            ><img src="img/logo.png" alt="Logo"
+          /></a>
+        </div>
+        <h1>Magic Baking Factory</h1>
+        <nav class="nav">
+          <a href="index.html">Home</a> <a href="pastries.html">Pastries</a>
+          <a href="about.html">About</a> <a href="contact.html">Contact</a>
+        </nav>
+      </header>
 
-<body>
-  <div class="container">
-
-    <!-- header contains logo and navigation menu -->
-    <header>
-      <div id="top-content">
-        <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
-      </div>
-      <h1>Magic Baking Factory</h1>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="pastries.html">Pastries</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
-
-    <!-- main content includes slider and featured collection. -->
-    <div class="slider">
-      <figure>
-        <img src="img/orange_mousse.jpg" alt="Orange Mousse">
-        <img src="img/strawberry_cake.jpg" alt="Strawberry Cake">
-        <img src="img/tiramisu.jpg" alt="Tiramisu">
-        <img src="img/vanilla_souffle.jpg" alt="Vanilla Souffle">
-        <img src="img/cookie.jpg" alt="Cookie">
-      </figure>
-    </div>
-
-    <h2>Featured Collection</h2>
-    <div class="featured-collection">
-      <div class="featured-product">
+      <!-- main content includes slider and featured collection. -->
+      <div class="slider">
         <figure>
-          <a href="christmas-tree-cookie.html"><img src="./img/christmas-tree-cookie-250.jpg" alt="Christmas Tree Cookie"></a>
-          <figcaption>Christmas Tree Cookie</figcaption>
+          <img src="img/orange_mousse.jpg" alt="Orange Mousse" />
+          <img src="img/strawberry_cake.jpg" alt="Strawberry Cake" />
+          <img src="img/tiramisu.jpg" alt="Tiramisu" />
+          <img src="img/vanilla_souffle.jpg" alt="Vanilla Souffle" />
+          <img src="img/cookie.jpg" alt="Cookie" />
         </figure>
       </div>
-      <div class="featured-product">
-        <figure class="thumbnail">
-          <a href="lolipop-cake.html"><img src="./img/lolipop-cake-250.jpg" alt="Lolipop Cake"></a>
-          <figcaption>Lolipop Cake</figcaption>
-        </figure>
-      </div>
-      <div class="featured-product">
-        <figure>
-          <a href="matcha-souffle.html"><img src="./img/matcha-souffle-250.jpg" alt="Matcha Souffle"></a>
-          <figcaption>Matcha Souffle</figcaption>
-        </figure>
-      </div>
-    </div>
-  </div>
 
-  <!-- footer consists of three divs: back to top, social media links, and copyright. -->
-  <footer>
-    <div class="back-to-top-wrapper">
-      <a href="#top-content"><i class="fas fa-arrow-up"></i> TOP</a>
-    </div>
-    <div class="footer-wrapper">
-      <div class="follow-us">
-        <h3>Follow Us</h3>
-        <a href="https://wwww.facebook.com" target="view_window"><i class="fab fa-facebook-f fa-2x“></i></a>
-        <a href="https://www.instagram.com" target="view_window"><i class="fab fa-instagram fa-2x"></i></a>
+      <h2>Featured Collection</h2>
+      <div class="featured-collection">
+        <div class="featured-product">
+          <figure>
+            <a href="christmas-tree-cookie.html"
+              ><img
+                src="./img/christmas-tree-cookie-250.jpg"
+                alt="Christmas Tree Cookie"
+            /></a>
+            <figcaption>Christmas Tree Cookie</figcaption>
+          </figure>
+        </div>
+        <div class="featured-product">
+          <figure class="thumbnail">
+            <a href="lolipop-cake.html"
+              ><img src="./img/lolipop-cake-250.jpg" alt="Lolipop Cake"
+            /></a>
+            <figcaption>Lolipop Cake</figcaption>
+          </figure>
+        </div>
+        <div class="featured-product">
+          <figure>
+            <a href="matcha-souffle.html"
+              ><img src="./img/matcha-souffle-250.jpg" alt="Matcha Souffle"
+            /></a>
+            <figcaption>Matcha Souffle</figcaption>
+          </figure>
+        </div>
       </div>
-      <div class="footer-content">
-        <p>Copyright ©2014-2018 Siqi Studio, All Rights Reserved</p>
-      </div>
     </div>
-  </footer>
-</body>
 
+    <!--
+      footer consists of three divs: back to top, social media links, and copyright.
+    -->
+    <footer>
+      <div class="back-to-top-wrapper">
+        <a href="#top-content"><i class="fas fa-arrow-up"></i> TOP</a>
+      </div>
+      <div class="footer-wrapper">
+        <div class="follow-us">
+          <h3>Follow Us</h3>
+          <a href="https://wwww.facebook.com" target="view_window"
+            ><i class="fab fa-facebook fa-2x"></i
+          ></a>
+          <a href="https://www.instagram.com" target="view_window"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+        </div>
+        <div class="footer-content">
+          <p>Copyright ©2014-2018 Siqi Studio, All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
